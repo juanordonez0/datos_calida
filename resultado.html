@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <table>
+        <tbody id="container">
+            <tr>
+                <th>Clases Aparentes</th>
+                <th>Frecuencia (f)</th>
+                <th>Frecuencia Absoluta(F)</th>
+                <th>Marca de clase (xi)</th>
+                <th>Xi * f</th>
+                <th>xi-x̄</th>
+                <th>|xi-x̄|</th>
+                <th>f * |xi-x̄|</th>
+                <th>|xi-x̄|²</th>
+                <th>f * |xi-x̄|²</th>
+                <th>|xi-x̄|<sup>4</sup></th>
+                <th>f * |xi-x̄|<sup>4</sup></th>
+            </tr>
+        </tbody>
+    </table>
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div>
+
+        <h1>Media:</h1>
+        <p id="media_output"></p>
+
+        <br>
+
+        <h1>Desviación Media:</h1>
+        <p id="DM_output"></p>
+
+        <br>
+
+        <h1>Varianza:</h1>
+        <p id="V_output"></p>
+
+        <br>
+
+        <h1>Desviación Estandar:</h1>
+        <p id="DE_output"></p>
+    </div>
+    <div>
+
+        <h1>Asimetria:</h1>
+        <p id="asi"></p>
+
+        <br>
+
+        <h1>Curtosis:</h1>
+        <p id="curt"></p>
+    </div>
+
+    <div>
+
+        <h1>Calcular cuartiles, deciles y percentiles:</h1>
+        <input type="number" placeholder="Ingrese la cantidad" id="num">
+
+        <select id="option">
+            <option>Cuartil</option>
+            <option>Decil</option>
+            <option>Percentil</option>
+        </select>
+        
+
+        <br>
+        <br>
+
+        <button onclick="calculatePart()">Calcular</button>
+        <p id="part_output">Resultado: </p>
+
+      
+
+
+
+</div>
+
+
+    <script src="getting.js"></script>
+
+</body>
+</html>
