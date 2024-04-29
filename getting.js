@@ -43,7 +43,7 @@ list.forEach(e => {
 
 
     let abssq = Math.pow(abs, 2);
-    let fabssq = e.frec * abssq.toFixed(2);
+    let fabssq = e.frec * abssq;
 
     let xidifmedi4 = Math.pow(xidifmedi, 4)
     let fxidifmedi4 = e.frec * xidifmedi4.toFixed(2);
@@ -153,7 +153,7 @@ function getMedia(arr){
 function  getV(sum2, n){
 
 
-    let num = n-1
+    let num = n
     let v = sum2 / num;
 
     return v;
@@ -272,7 +272,7 @@ function getPart(arr, indexpart, operacion){
 
   
 
-    let lri = arr[indexpart].lim_inf-0.5;
+    let lri = arr[indexpart].lim_inf;
     let i =  getInterval(arr);
     let f = arr[indexpart].frec;
     let faa = arr[indexpart-1] ? arr[indexpart-1].fa : 0; 
